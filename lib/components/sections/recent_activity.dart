@@ -1,5 +1,6 @@
 import 'package:alubank/components/box_card.dart';
 import 'package:alubank/components/color_dot.dart';
+import 'package:alubank/components/divisor.dart';
 import 'package:alubank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,7 @@ class _RecentActivityContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -62,7 +64,35 @@ class _RecentActivityContent extends StatelessWidget {
               ],
             ),
           ],
-        )
+        ),
+        const Padding(
+          padding: EdgeInsets.only(top: 16.0, bottom: 8.0),
+          child: Text('Limite de gastos \$432,93'),
+        ),
+        Container(
+          clipBehavior: Clip.hardEdge,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(5),
+          ),
+          child: const LinearProgressIndicator(
+            value: 0.3,
+            minHeight: 8.0,
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.only(top: 8.0, bottom: 8.0),
+          child: Divisor(),
+        ),
+        const Text(
+          'Esse mês você gastou \$1500.00 com jogos. Tente abaixar esse custo!',
+        ),
+        TextButton(
+          onPressed: (() {}),
+          child: const Text(
+            'Diga-me como!',
+            style: TextStyle(fontSize: 16),
+          ),
+        ),
       ],
     );
   }

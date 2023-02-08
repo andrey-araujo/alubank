@@ -10,9 +10,10 @@ const Alubank({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context){
-    return const MaterialApp(
+    return MaterialApp(
       title: 'Alubank',
-      home: Home(),
+      theme: ThemeData.dark(),
+      home: const Home(),
     );
   }
 }  

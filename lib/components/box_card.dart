@@ -6,7 +6,7 @@ class BoxCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Ink(
       // height: 233,
       // width: 370,
       padding: const EdgeInsets.all(16),

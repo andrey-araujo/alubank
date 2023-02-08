@@ -28,7 +28,7 @@ class Header extends StatelessWidget {
               children: [
                 Text.rich(
                   TextSpan(
-                    text: 'R\$',
+                    text: '\$',
                     children: [
                       TextSpan(
                         text: '1000.00',

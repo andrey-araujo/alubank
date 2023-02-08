@@ -9,7 +9,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
-        children: <Widget>[
+        children: const <Widget>[
           Header(),
           BoxCard(boxContent: Text('Olá mundo!'))
         ],

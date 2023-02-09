@@ -12,4 +12,8 @@ class ThemeColors {
     'income': Color.fromRGBO(191, 69, 198, 1.0),
   };
   static const divisor = Color.fromRGBO(166, 166, 166, 1.0);
+  static const pointSection = {
+    'delivery': Color.fromRGBO(250, 0, 112, 1),
+    'streaming': Color.fromRGBO(75, 89, 191, 1),
+  };
 }

@@ -12,7 +12,7 @@ class AccountActions extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: const EdgeInsets.only(bottom: 16.0),
+            padding: const EdgeInsets.only(bottom: 10.0),
             child: Text(
               'Ações da conta',
               style: Theme.of(context).textTheme.titleMedium,
